@@ -39,14 +39,13 @@ Python 静态函数实现
 
 ### Embedding 模块
 
-**Sentence-transformers Huggingface**
+**OpenAI Embeddings**
 
 - 将文本内容编码为可被 LLM 理解的高维数值表示，便于后续的语义相似度检索。先试用较为轻量的向量模型进行试验。
-- 模型链接：[all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 
-### 向量库数据库设计
+### 向量库数据库
 
-**Chroma/FAISS**
+**Chroma**
 
 - 专门储存于管理知识条目的 embedding 向量数据，并支持快速相似度检索。
 - 每一个embedding 对应向量数据都拥有一个与 SQLite 数据库中的表数据绑定 id
